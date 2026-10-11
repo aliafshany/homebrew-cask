@@ -16,7 +16,7 @@ cask "freesurfer" do
 
   depends_on :macos
 
-  suite "freesurfer"
+  pkg "freesurfer-macOS-darwin_#{arch}-#{version}.pkg"
 
   zap trash: "~/Library/Preferences/edu.harvard.mgh.nmr.FreeView.plist"
 
