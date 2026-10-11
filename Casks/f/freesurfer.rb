@@ -1,15 +1,17 @@
 cask "freesurfer" do
-  version "7.4.1"
-  sha256 "9089c369a16556f9edf2cb6f7cddd4cb1e4ce7fadea12c919727aa34347c4032"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/#{version}/freesurfer-macOS-darwin_x86_64-#{version}.tar.gz"
+  version "8.2.0"
+  sha256 "9a2514589db567b4c47740207494a30b4276aa2a1327f065466ba3ee2886a324"
+
+  url "https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/#{version}/freesurfer-macOS-darwin_#{arch}-#{version}.pkg"
   name "FreeSurfer"
   desc "Software suite for processing and analyzing brain MRI images"
   homepage "https://surfer.nmr.mgh.harvard.edu/"
 
   livecheck do
-    url "https://surfer.nmr.mgh.harvard.edu/fswiki/ReleaseNotes"
-    regex(/v(\d+(?:\.\d+)+)/i)
+    url "https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/"
+    regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)
   end
 
   depends_on :macos
