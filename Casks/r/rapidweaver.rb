@@ -12,6 +12,7 @@ cask "rapidweaver" do
     strategy :sparkle
   end
 
+  auto_updates true
   depends_on :macos
 
   app "RapidWeaver.app"
