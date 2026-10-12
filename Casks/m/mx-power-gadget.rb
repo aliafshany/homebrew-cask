@@ -12,6 +12,7 @@ cask "mx-power-gadget" do
     strategy :sparkle, &:short_version
   end
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Mx Power Gadget.app"
