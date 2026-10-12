@@ -12,6 +12,7 @@ cask "live-home-3d" do
     strategy :sparkle, &:short_version
   end
 
+  auto_updates true
   depends_on macos: :monterey
 
   app "Live Home 3D.app"
