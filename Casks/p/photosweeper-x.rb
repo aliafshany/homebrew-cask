@@ -12,6 +12,7 @@ cask "photosweeper-x" do
     strategy :sparkle, &:short_version
   end
 
+  auto_updates true
   depends_on :macos
 
   app "PhotoSweeper X.app"
