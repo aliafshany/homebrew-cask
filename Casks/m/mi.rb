@@ -12,6 +12,7 @@ cask "mi" do
     strategy :sparkle, &:short_version
   end
 
+  auto_updates true
   conflicts_with cask: "mi@beta"
   depends_on :macos
 
