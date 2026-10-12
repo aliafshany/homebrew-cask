@@ -12,6 +12,7 @@ cask "tunein" do
     strategy :electron_builder
   end
 
+  auto_updates true
   depends_on macos: :monterey
 
   app "TuneIn.app"
