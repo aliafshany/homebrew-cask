@@ -17,6 +17,7 @@ cask "youdaonote" do
     strategy :electron_builder
   end
 
+  auto_updates true
   depends_on :macos
 
   app "有道云笔记.app"
