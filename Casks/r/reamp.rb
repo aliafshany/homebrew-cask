@@ -12,9 +12,10 @@ cask "reamp" do
     strategy :sparkle, &:nice_version
   end
 
+  auto_updates true
   depends_on :macos
 
-  app "reAMP.app"
+  app "Reamp.app"
 
   zap trash: [
     "~/Library/Application Scripts/ru.alexfreud.ReAmp.ReAmpQuickLook",
