@@ -12,6 +12,7 @@ cask "sysex-librarian" do
     strategy :sparkle
   end
 
+  auto_updates true
   depends_on :macos
 
   app "SysEx Librarian.app"
