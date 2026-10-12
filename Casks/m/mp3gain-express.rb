@@ -12,6 +12,7 @@ cask "mp3gain-express" do
     strategy :sparkle
   end
 
+  auto_updates true
   depends_on :macos
 
   app "MP3Gain Express.app"
